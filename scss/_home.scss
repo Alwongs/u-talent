@@ -22,16 +22,18 @@
     }  
     @media (min-width: $tablet-min) and (max-width: $tablet-max) {
         position: static;
-        color: $color;
-        width: 100%;    
+        color: rgb(53, 111, 172);
+        width: 100%;  
+        text-align: center;  
     } 
     @media (max-width: $mobile-max) {
         position: static;
-        color: $color;
+        color: rgb(53, 111, 172);
         width: 100%;
     }      
 }
 .home__link {
+    //border: 3px solid red;
     display: block;
     position: absolute;
     right: 0;
