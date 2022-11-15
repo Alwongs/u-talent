@@ -1,6 +1,6 @@
 .requirements {
-    border: 3px solid red;
     padding: 32px;
+    
 }
 .requirements__title {
     margin-bottom: 32px;
@@ -19,8 +19,7 @@
     margin: 32px 0 32px;
 }
 
-.requirements__item-attributes,
-.requirements__item-order ul li {
+.requirements__item-attributes ul li {
     text-align: center;
     font-weight: 700;
     font-style: italic;

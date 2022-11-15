@@ -16,7 +16,10 @@
     font-size: 20px;
     font-style: italic;
     font-weight: 400;
-    padding: 32px;     
+    padding: 32px;   
+    p:not(:last-child) {
+        margin-bottom: 16px;
+    }  
     @media (min-width: $tablet-min) and (max-width: $tablet-max) {
         position: static;
         color: $color;
