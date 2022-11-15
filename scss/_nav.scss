@@ -1,4 +1,4 @@
-.nav-panel {
+.nav-panel {  
     position: fixed;
     top: 0;
     left: 0;
@@ -12,6 +12,7 @@
     max-width: $wrap; 
     @include flex(space-between, center);
     margin: 0 auto;
+    padding: 0 32px;
     transition: 0.5s;
     &.transparent {
         transition: 0.5s;
@@ -21,7 +22,6 @@
 .nav-panel__home {
     @include flex(center, center);   
     z-index: 1; 
-    padding: 0 16px;
     a {
         font-size: 20px;
         color: $white;  
