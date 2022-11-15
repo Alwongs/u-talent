@@ -1,0 +1,103 @@
+.nav-panel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 64px;
+    width: 100%;
+    z-index: 2;
+}
+.nav-panel__container {
+    background: rgb(2, 75, 107);
+    height: 100%;
+    max-width: $wrap; 
+    @include flex(space-between, center);
+    margin: 0 auto;
+    transition: 0.5s;
+    &.transparent {
+        transition: 0.5s;
+        background: transparent;
+    }
+}
+.nav-panel__home {
+    @include flex(center, center);   
+    z-index: 1; 
+    padding: 0 16px;
+    a {
+        font-size: 20px;
+        color: $white;  
+        transition: 0.3s;      
+        &:hover {
+            color: $yellow;
+        }             
+    }
+}
+.nav-panel__list {  
+    @include flex(center, center);
+    @media (max-width: $mobile-max) {
+        background-color: rgb(2, 75, 107);
+        flex-direction: column;  
+        justify-content: space-evenly;        
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        margin-top: -100vh;
+        transition: margin-top 0.5s;    
+        &.active {
+            display: flex;
+            margin-top: 0;            
+        }
+    }  
+}
+.nav-panel__item {
+    margin: 0 25px;
+
+    @media (min-width: $desktop-min) and (max-width: $desktop-max) {
+        margin: 0 20px;
+    }     
+    @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+        margin: 0 10px;
+    } 
+    @media (max-width: $mobile-max) {
+        text-align: center;
+        margin: 0;
+    }    
+}
+.nav-panel__item a {
+    color: $white;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.3s;      
+    &:hover {
+        color: $yellow;
+    }
+    @media (min-width: $desktop-min) and (max-width: $desktop-max) {
+
+    }     
+    @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+
+    } 
+    @media (max-width: $mobile-max) {
+        font-size: 30px;
+        font-weight: 400;
+    }     
+}
+.nav-panel__menu-btn {
+    display: none; 
+    @media (max-width: $tablet-min) {
+        z-index: 4;
+        cursor: pointer;
+        content: '222';
+        display: block;
+        width: 32px;
+        height: 32px;
+        margin-right: 16px;
+        background-image: url('../img/svg/menu_btn.svg');
+        background-repeat: no-repeat;
+        &.active {
+            background-image: url('../img/svg/menu_close_btn.svg');  
+            background-repeat: no-repeat;              
+        } 
+    }        
+}
