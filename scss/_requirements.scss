@@ -19,15 +19,22 @@
     margin: 32px 0 32px;
 }
 
-.requirements__item-attributes ul li {
+.requirements__item-attributes,
+.requirements__item-order ul li {
     text-align: center;
     font-weight: 700;
-    font-style: normal;
+    font-style: italic;
     u {
         color: rgb(144, 0, 255);
         font-style: none;
     }
 }
-.requirements__item-order ol li {
+.requirements__item-order ul li {
     text-align: center;
+    font-weight: 400;
+    font-style: normal;
+    u {
+        color: rgb(144, 0, 255);
+        font-style: none;
+    }
 }
