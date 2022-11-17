@@ -18,6 +18,15 @@
         transition: 0.5s;
         background: transparent;
     }
+    @media (min-width: $desktop-min) and (max-width: $desktop-max) {
+
+    }     
+    @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+
+    } 
+    @media (max-width: $mobile-max) {
+        padding: 16px;
+    }     
 }
 .nav-panel__home {
     @include flex(center, center);   
@@ -31,7 +40,7 @@
         }             
     }
 }
-.nav-panel__list {  
+.nav-panel__list { 
     @include flex(center, center);
     @media (max-width: $mobile-max) {
         background-color: rgb(2, 75, 107);
@@ -92,7 +101,6 @@
         display: block;
         width: 32px;
         height: 32px;
-        margin-right: 16px;
         background-image: url('../img/svg/menu_btn.svg');
         background-repeat: no-repeat;
         &.active {

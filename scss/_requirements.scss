@@ -1,5 +1,12 @@
 .requirements {
     padding: 32px;
+    @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+        padding: 16px;    
+    }
+    @media (max-width: $mobile-max) {
+        font-size: 14px;
+        padding: 16px;
+    }
 }
 .requirements__title {
     font-style: italic;
@@ -21,10 +28,19 @@
 }
 .requirements__list {
     padding: 0 32px;
+    @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+        padding: 24px;    
+    }    
+    @media (max-width: $mobile-max) {
+        padding: 16px;
+    }
 }
 .requirements__list-dotted {
     list-style-type: disc;
     padding: 0 48px;
+    @media (max-width: $mobile-max) {
+        padding: 24px;
+    }
 }
 .requirements__item {
     margin-bottom: 8px;
