@@ -1,9 +1,9 @@
 .jury {  
     background-color: rgb(255, 228, 211);
     height: 100%;
-    padding: 32px; 
+    padding: 64px 32px 32px;
     @media (max-width: $mobile-max) {
-        padding: 16px; 
+        padding: 64px 16px 16px;
     }      
 }    
 .jury__header {

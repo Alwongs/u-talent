@@ -1,11 +1,12 @@
 .requirements {
-    padding: 32px;
+    padding: 64px 32px 32px;
     @media (min-width: $tablet-min) and (max-width: $tablet-max) {
-        padding: 16px;    
+        padding: 64px 16px 16px;  
+        font-size: 14px; 
     }
     @media (max-width: $mobile-max) {
         font-size: 13px;
-        padding: 16px;
+        padding: 64px 16px 16px;
     }
 }
 .requirements__title {
@@ -23,7 +24,7 @@
     @media (max-width: $mobile-max) {
         width: 100%;
         padding: 12px 0;        
-        font-size: 18px;
+        font-size: 15px;
     }    
 }
 .requirements__list {
