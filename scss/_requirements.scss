@@ -4,7 +4,7 @@
         padding: 16px;    
     }
     @media (max-width: $mobile-max) {
-        font-size: 14px;
+        font-size: 13px;
         padding: 16px;
     }
 }
@@ -23,7 +23,7 @@
     @media (max-width: $mobile-max) {
         width: 100%;
         padding: 12px 0;        
-        font-size: 20px;
+        font-size: 18px;
     }    
 }
 .requirements__list {
@@ -32,14 +32,14 @@
         padding: 24px;    
     }    
     @media (max-width: $mobile-max) {
-        padding: 16px;
+        padding: 0;
     }
 }
 .requirements__list-dotted {
     list-style-type: disc;
     padding: 0 48px;
     @media (max-width: $mobile-max) {
-        padding: 24px;
+        padding: 0 16px;
     }
 }
 .requirements__item {
@@ -54,7 +54,7 @@
         margin: 24px 0 24px;
     }
     li {
-        margin-bottom: 24px;
+        margin-bottom: 16px;
     }
 }
 .requirements__item-order {

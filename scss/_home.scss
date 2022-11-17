@@ -35,7 +35,6 @@
     }      
 }
 .home__link {
-    //border: 1px solid red;
     width: 100%;
     position: absolute;
     padding: 16px 32px 48px;
@@ -66,7 +65,7 @@
     width: fit-content;
     font-size: 20px;    
     color: $white;  
-    padding: 16px;
+    padding: 16px 32px;
     &:hover {
         background-size: 140% 100%, auto;
     }  
@@ -78,7 +77,7 @@
     @media (min-width: $tablet-min) and (max-width: $tablet-max) {
         font-size: 16px;
         width: fit-content;
-        padding: 16px;
+        padding: 16px 32px;
     } 
     @media (max-width: $mobile-max) {
         display: block;
