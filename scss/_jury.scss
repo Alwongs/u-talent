@@ -6,14 +6,11 @@
         padding: 64px 16px 16px;
     }      
 }    
-.jury__header {
-    // width: 100%;
-    // text-align: center;  
-    // margin-bottom: 32px;
+.jury__title {
     font-style: italic;
     color: rgb(53, 111, 172);
-    // border-top: 1px solid rgb(53, 111, 172);
-    // border-bottom: 1px solid rgb(53, 111, 172);
+    border-top: 1px solid rgb(53, 111, 172);
+    border-bottom: 1px solid rgb(53, 111, 172);
     width: 70%;
     margin: 0 auto;
     padding: 16px 0;
@@ -22,9 +19,9 @@
         width: 80%;
     }
     @media (max-width: $mobile-max) {
-        width: 100%;
+        width: 70%;
         padding: 12px 0;        
-        font-size: 18px;
+        font-size: 15px;
     }      
 }
 .jury__card-list {
