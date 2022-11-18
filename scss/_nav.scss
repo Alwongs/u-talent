@@ -31,15 +31,34 @@
 .nav-panel__home {
     @include flex(center, center);   
     z-index: 1; 
-    a {
-        font-size: 20px;
-        color: $white;  
-        transition: 0.3s;      
+    cursor: pointer;
+    @media (max-width: $mobile-max) {
+        background-image: url('../img/svg/home.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 32px;
+        height: 32px; 
+    }     
+    &:active {
+        box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.2);
+    }  
+}
+
+.nav-panel__home a {
+    font-size: 20px;
+    color: $white;  
+    transition: 0.3s;      
+
+    @media (min-width: $mobile-max) {
         &:hover {
             color: $yellow;
-        }             
-    }
+        } 
+    }      
+    @media (max-width: $mobile-max) {
+        color: transparent;
+    }        
 }
+
 .nav-panel__list { 
     @include flex(center, center);
     @media (max-width: $mobile-max) {
@@ -82,10 +101,10 @@
         color: $yellow;
     }
     @media (min-width: $desktop-min) and (max-width: $desktop-max) {
-
+        font-size: 17px;
     }     
     @media (min-width: $tablet-min) and (max-width: $tablet-max) {
-
+        font-size: 14px;
     } 
     @media (max-width: $mobile-max) {
         font-size: 30px;
@@ -94,7 +113,7 @@
 }
 .nav-panel__menu-btn {
     display: none; 
-    @media (max-width: $tablet-min) {
+    @media (max-width: $mobile-max) {
         z-index: 4;
         cursor: pointer;
         content: '222';
