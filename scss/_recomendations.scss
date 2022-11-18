@@ -1,6 +1,14 @@
 .recomendations { 
     background-color: rgb(255, 228, 211);
-    padding: 32px;
+    padding: 64px 32px 32px;
+    @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+        padding: 64px 16px 16px;  
+        font-size: 14px; 
+    }
+    @media (max-width: $mobile-max) {
+        font-size: 13px;
+        padding: 64px 16px 16px;
+    }
 }
 .recomendations__container {
     //border: 2px solid red;
