@@ -31,10 +31,8 @@
     margin-bottom: 16px;
     flex-wrap: wrap;   
     @media (max-width: $mobile-max) {
-        //border: 1px solid red;
-        justify-content: space-around;
-        // flex-direction: column;
-        // align-items: center;
+        flex-direction: column;
+        align-items: center;
     }       
 }
 .jury__card-item {
@@ -45,9 +43,7 @@
     width: 300px;
     height: 100%;
     @media (max-width: $mobile-max) {
-        width: 40%;
         margin: 16px 0;
-        padding: 8px;
         max-width: fit-content;
         box-shadow: 0px 0px 2px 2px rgba(230, 180, 180, 0.3);
     }            
@@ -70,7 +66,6 @@
         min-height: 100%;
     }    
     @media (max-width: $mobile-max) {
-        margin-bottom: 8px;
         box-shadow: none;
     }        
 }
@@ -78,23 +73,9 @@
     text-align: center;
     font-size: 24px;
     font-weight: 500;
-    margin-bottom: 16px;
-    @media (max-width: $mobile-max) {
-        font-size: 14px;
-        line-height: 16px;
-        margin-bottom: 6px;
-    }  
+    margin-bottom: 24px;
 }
 .jury__company {
-    margin-bottom: 16px;
+    margin-bottom: 8px;
     color: grey;
-    @media (max-width: $mobile-max) {
-        margin-bottom: 6px;
-        font-size: 12px;
-    }      
-}
-.jury__city {   
-    @media (max-width: $mobile-max) {
-        font-size: 12px;
-    }     
 }
