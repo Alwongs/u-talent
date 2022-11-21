@@ -1,5 +1,5 @@
 .recomendations { 
-    background-color: rgb(255, 228, 211);
+    //background-color: rgb(255, 228, 211);
     padding: 64px 32px 32px;
     @media (min-width: $tablet-min) and (max-width: $tablet-max) {
         padding: 64px 16px 16px;  
@@ -14,20 +14,20 @@
     //border: 2px solid red;
 }
 .recomendations__title {
-    font-style: italic;
-    color: rgb(53, 111, 172);
-    border-top: 1px solid rgb(53, 111, 172);
-    border-bottom: 1px solid rgb(53, 111, 172);
-    width: 70%;
-    margin: 0 auto;
-    padding: 16px 0;
-    margin-bottom: 32px;
-    @media (min-width: $tablet-min) and (max-width: $tablet-max) {
-        width: 80%;
-    }
-    @media (max-width: $mobile-max) {
-        width: 100%;
-        padding: 12px 0;        
-        font-size: 15px;
-    }    
+    // font-style: italic;
+    // color: rgb(53, 111, 172);
+    // border-top: 1px solid rgb(53, 111, 172);
+    // border-bottom: 1px solid rgb(53, 111, 172);
+    // width: 70%;
+    // margin: 0 auto;
+    // padding: 16px 0;
+    // margin-bottom: 32px;
+    // @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+    //     width: 80%;
+    // }
+    // @media (max-width: $mobile-max) {
+    //     width: 100%;
+    //     padding: 12px 0;        
+    //     font-size: 15px;
+    // }    
 }
