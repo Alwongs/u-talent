@@ -1,29 +1,29 @@
 .home {
-    //border: 3px solid red;
-    position: relative; 
-    //height: 800px;   
-    max-height: 100vh;
-    @media (min-width: $desktop-min) and (max-width: $desktop-max) {
-        height: 800px;   
-    }     
-    @media (min-width: $tablet-min) and (max-width: $tablet-max) {
-        height: fit-content;   
-    }     
-    @media (max-width: $mobile-max) {
-        max-height: fit-content;
-    }  
+    //border: 3px solid red;   
+    height: fit-content;   
+    // @media (min-width: $desktop-min) and (max-width: $desktop-max) {
+  
+    // }     
+    // @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+
+    // }     
+    // @media (max-width: $mobile-max) {
+
+    // }  
 }
 .home__container {
+    position: relative; 
+    //border: 3px solid blue;
     height: 100%;
-    @media (min-width: $desktop-min) and (max-width: $desktop-max) {
+    // @media (min-width: $desktop-min) and (max-width: $desktop-max) {
 
-    }     
-    @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+    // }     
+    // @media (min-width: $tablet-min) and (max-width: $tablet-max) {
 
-    }     
-    @media (max-width: $mobile-max) {
+    // }     
+    // @media (max-width: $mobile-max) {
 
-    }      
+    // }      
 }
 .home__container img {
     width: 100%;
@@ -39,6 +39,7 @@
     }     
 }
 .home__content {
+    //border: 1px solid yellow;
     position: absolute;
     left: 0;
     top: 128px;
@@ -51,18 +52,23 @@
     p:not(:last-child) {
         margin-bottom: 16px;
     }  
-    // @media (min-width: $tablet-min) and (max-width: $tablet-max) {
-    //     position: static;
-    //     color: rgb(53, 111, 172);
-    //     width: 100%;  
-    //     text-align: center;  
-    // } 
+    @media (min-width: $desktop-min) and (max-width: $desktop-max) {
+        width: 45%;
+        top: 96px;
+    }     
+    @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+        width: 55%;
+        top: 64px;
+        font-size: 17px;
+    } 
     @media (max-width: $mobile-max) {
-        position: static;
-        color: rgb(53, 111, 172);
-        width: 100%;
-        text-align: center;
-        padding: 16px;
+        width: 55%;
+        top: 48px;
+        font-size: 12px;
+        padding: 0 8px;
+        p:not(:last-child) {
+            margin-bottom: 8px;
+        } 
     }      
 }
 .home__link {
@@ -118,4 +124,17 @@
         padding: 24px 0;
         text-align: center;
     }      
+}
+
+.home__description {
+    padding: 32px;
+    // @media (min-width: $desktop-min) and (max-width: $desktop-max) {
+
+    // }     
+    // @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+
+    // }     
+    @media (max-width: $mobile-max) {
+        padding: 16px;
+    }
 }
