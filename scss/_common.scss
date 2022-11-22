@@ -24,6 +24,9 @@ h2 {
     margin: 0 auto;
     padding: 16px 0;
     margin-bottom: 32px;
+    @media (min-width: $desktop-min) and (max-width: $desktop-max) {
+        margin-bottom: 16px;
+    } 
     @media (min-width: $tablet-min) and (max-width: $tablet-max) {
         width: 80%;
     }

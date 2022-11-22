@@ -1,7 +1,14 @@
 .jury {  
+    //border: 3px solid red;
     background-color: rgb(255, 228, 211);
     height: 100%;
     padding: 64px 32px 32px;
+    @media (min-width: $desktop-min) and (max-width: $desktop-max) {
+        height: 100vh;
+    }     
+    @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+
+    }      
     @media (max-width: $mobile-max) {
         padding: 64px 16px 16px;
     }      
@@ -19,12 +26,25 @@
     }       
 }
 .jury__card-item {
+    //border: 1px solid red;
     background-color: rgb(255, 228, 211);
     border-radius: 16px;    
     margin: 32px;    
     padding: 16px; 
     width: 300px;
     height: 100%;
+    @media (min-width: $desktop-min) and (max-width: $desktop-max) {
+        width: 300px;
+        margin: 0;
+        padding: 8px;
+    }     
+    @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+        width: 30%;
+        margin: 16px 0;
+        padding: 16px;
+        max-width: fit-content;
+        //box-shadow: 0px 0px 2px 2px rgba(230, 180, 180, 0.3);
+    }      
     @media (max-width: $mobile-max) {
         width: 40%;
         margin: 16px 0;
@@ -49,7 +69,14 @@
         max-height: 100%;
         min-width: 100%;
         min-height: 100%;
-    }    
+    }  
+    @media (min-width: $desktop-min) and (max-width: $desktop-max) {
+        width: 50%;
+        margin-bottom: 12px;
+    }     
+    @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+        margin-bottom: 16px;
+    }         
     @media (max-width: $mobile-max) {
         margin-bottom: 8px;
         box-shadow: none;
@@ -60,6 +87,14 @@
     font-size: 24px;
     font-weight: 500;
     margin-bottom: 16px;
+    @media (min-width: $desktop-min) and (max-width: $desktop-max) {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }     
+    @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+        font-size: 18px;
+        margin-bottom: 12px;
+    }      
     @media (max-width: $mobile-max) {
         font-size: 14px;
         line-height: 16px;
@@ -69,12 +104,25 @@
 .jury__company {
     margin-bottom: 16px;
     color: grey;
+    @media (min-width: $desktop-min) and (max-width: $desktop-max) {
+        font-size: 15px;
+        margin-bottom: 6px;
+    }     
+    @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+        margin-bottom: 12px;
+    }      
     @media (max-width: $mobile-max) {
         margin-bottom: 6px;
         font-size: 12px;
     }      
 }
-.jury__city {   
+.jury__city {  
+    @media (min-width: $desktop-min) and (max-width: $desktop-max) {
+        font-size: 15px;
+    }     
+    @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+
+    }       
     @media (max-width: $mobile-max) {
         font-size: 12px;
     }     
