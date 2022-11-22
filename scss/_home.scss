@@ -1,15 +1,16 @@
 .home {
+    //border: 3px solid red;
     position: relative; 
-    height: 800px;   
+    //height: 800px;   
     max-height: 100vh;
     @media (min-width: $desktop-min) and (max-width: $desktop-max) {
         height: 800px;   
     }     
     @media (min-width: $tablet-min) and (max-width: $tablet-max) {
-        max-height: fit-content;   
+        height: fit-content;   
     }     
     @media (max-width: $mobile-max) {
-
+        max-height: fit-content;
     }  
 }
 .home__container {
@@ -50,12 +51,12 @@
     p:not(:last-child) {
         margin-bottom: 16px;
     }  
-    @media (min-width: $tablet-min) and (max-width: $tablet-max) {
-        position: static;
-        color: rgb(53, 111, 172);
-        width: 100%;  
-        text-align: center;  
-    } 
+    // @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+    //     position: static;
+    //     color: rgb(53, 111, 172);
+    //     width: 100%;  
+    //     text-align: center;  
+    // } 
     @media (max-width: $mobile-max) {
         position: static;
         color: rgb(53, 111, 172);
@@ -65,21 +66,22 @@
     }      
 }
 .home__link {
+    //border: 3px solid red;
     width: 100%;
     position: absolute;
     padding: 16px 32px 48px;
     right: 0;
     bottom: 0;
     text-align: end;
-    @media (min-width: $tablet-min) and (max-width: $tablet-max) {
-        position: relative;
-        width: 100%;
-        padding: 16px 16px 32px;   
-    } 
+    // @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+    //     position: static;
+    //     width: 100%;
+    //     padding: 16px 16px 32px;   
+    // } 
     @media (max-width: $mobile-max) {
-        position: relative;
+        position: static;
         width: 100%;
-        padding: 16px 16px 32px;   
+        padding: 16px 16px 16px;   
     }     
 }
 .home__link a {
