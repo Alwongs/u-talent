@@ -2,7 +2,7 @@
     //border: 3px solid red;
     background-color: rgb(255, 228, 211);
     height: fit-content;
-    padding: 64px 32px 32px;
+    padding: 48px 32px 0;
     @media (min-width: $desktop-min) and (max-width: $desktop-max) {
 
     }     
@@ -10,7 +10,7 @@
 
     }      
     @media (max-width: $mobile-max) {
-        padding: 64px 16px 16px;
+        padding: 48px 16px 0;
     }      
 }    
 
@@ -18,7 +18,7 @@
     display: flex;
     justify-content: space-around;
     list-style: none;
-    margin-bottom: 16px;
+    //margin-bottom: 16px;
     flex-wrap: wrap;   
     @media (max-width: $mobile-max) {
         justify-content: space-around;
