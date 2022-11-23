@@ -65,10 +65,13 @@
         width: 55%;
         top: 48px;
         font-size: 12px;
-        padding: 0 8px;
+        padding: 16px;
         p:not(:last-child) {
             margin-bottom: 8px;
         } 
+        p:last-child {
+            display: none;
+        }
     }      
 }
 .home__link {
