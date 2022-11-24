@@ -79,57 +79,16 @@
 }
 .home__link {
     //border: 3px solid red;
-    width: 100%;
     position: absolute;
-    padding: 16px 32px 48px;
+    padding: 16px 32px 32px;
     right: 0;
     bottom: 0;
-    text-align: end;
-    // @media (min-width: $tablet-min) and (max-width: $tablet-max) {
-    //     position: static;
-    //     width: 100%;
-    //     padding: 16px 16px 32px;   
-    // } 
+    justify-content: flex-end;
     @media (max-width: $mobile-max) {
         position: static;
         width: 100%;
         padding: 16px 16px 16px;   
     }     
-}
-.home__link a {
-    background: linear-gradient(to left, rgba(0,0,0,.5),
-                rgba(0,0,0,.1) 50%, rgba(0,0,0,.5)),
-                linear-gradient(rgb(0, 90, 129), rgb(0, 128, 183), rgb(1, 89, 128));
-    background-size: 100% 100%, auto;
-    background-position: 50% 50%;
-    box-shadow: inset rgb(0, 125, 187) 0 -1px 1px, inset 0 1px 1px rgb(0, 129, 184), rgb(0, 78, 112) 0 0 0 1px, #000 0 10px 15px -10px;
-    transition: 0.2s;
-    border-radius: 4px;
-
-    width: fit-content;
-    font-size: 20px;    
-    color: $white;  
-    padding: 16px 32px;
-    &:hover {
-        background-size: 140% 100%, auto;
-    }  
-    &:active {
-        bottom: 33px;
-        color: #ffdead;
-        box-shadow: inset #ebab00 0 -1px 1px, inset 0 1px 1px #ffbf00, #cc7722 0 0 0 1px, 0 10px 10px -9px #000;
-    }      
-    @media (min-width: $tablet-min) and (max-width: $tablet-max) {
-        font-size: 16px;
-        width: fit-content;
-        padding: 16px 32px;
-    } 
-    @media (max-width: $mobile-max) {
-        display: block;
-        font-size: 18px;
-        width: 100%;
-        padding: 24px 0;
-        text-align: center;
-    }      
 }
 
 .home__description {
@@ -140,7 +99,7 @@
     max-width: 700px;
     text-align: justify;
     margin: 0 auto;
-    padding: 96px 64px 128px;
+    padding: 96px 64px 96px;
     p {
         margin-bottom: 16px;
     }
@@ -189,8 +148,9 @@
     text-decoration: underline;
     font-weight: bold;
 }
-.note {
-    background-color: rgb(242, 0, 255);
-    padding: 8px;
-    color: white;
+
+.home__description-link {
+    justify-content: center;
+    padding-top: 24px;
 }
+

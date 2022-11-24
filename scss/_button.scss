@@ -1,0 +1,39 @@
+
+.app-button {
+    //border: 3px solid red;
+    width: 100%;
+    display: flex;   
+}
+.app-button a {
+    background: linear-gradient(to left, rgba(0,0,0,.5),
+                rgba(0,0,0,.1) 50%, rgba(0,0,0,.5)),
+                linear-gradient(rgb(0, 90, 129), rgb(0, 128, 183), rgb(1, 89, 128));
+    background-size: 100% 100%, auto;
+    background-position: 50% 50%;
+    box-shadow: inset rgb(0, 125, 187) 0 -1px 1px, inset 0 1px 1px rgb(0, 129, 184), rgb(0, 78, 112) 0 0 0 1px, #000 0 10px 15px -10px;
+    transition: 0.2s;
+    border-radius: 4px;
+    width: fit-content;
+    font-size: 20px;    
+    color: $white;  
+    padding: 16px 32px;
+    &:hover {
+        background-size: 140% 100%, auto;
+    }  
+    &:active {
+        bottom: 33px;
+        color: #ffdead;
+        box-shadow: inset #ebab00 0 -1px 1px, inset 0 1px 1px #ffbf00, #cc7722 0 0 0 1px, 0 10px 10px -9px #000;
+    }      
+    @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+        font-size: 16px;
+        width: fit-content;
+        padding: 16px 32px;
+    } 
+    @media (max-width: $mobile-max) {
+        font-size: 18px;
+        width: 100%;
+        padding: 24px 0;
+        text-align: center;
+    }      
+}
