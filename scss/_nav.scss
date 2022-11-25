@@ -67,7 +67,7 @@
     @media (max-width: $mobile-max) {
         background-color: rgb(2, 75, 107);
         flex-direction: column;  
-        justify-content: space-evenly;        
+        justify-content: center;        
         position: absolute;
         top: 0;
         left: 0;
@@ -93,6 +93,8 @@
     @media (max-width: $mobile-max) {
         text-align: center;
         margin: 0;
+        margin-bottom: 32px;
+        border-bottom: 1px solid white;
     }    
 }
 .nav-panel__item a {
