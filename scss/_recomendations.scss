@@ -12,10 +12,17 @@
 }
 
 .recomendations__list {
+    width: fit-content;
+    margin: 0 auto;
     list-style: disc;
-    padding-left: 32px;
+    @media (max-width: $mobile-max) {
+        padding-left: 14px;
+    }    
 }
-
+.recomendations__item {
+    font-size: 16px;
+    margin-bottom: 16px;
+}
 .recomendations__link {
     justify-content: center;
     padding: 30px 0 24px;

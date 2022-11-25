@@ -9,6 +9,8 @@
 .nav-panel__container {
     background: rgb(2, 75, 107);
     height: 100%;
+    box-shadow: inset 0px -3px 4px rgb(0, 45, 65, 0.7),
+                0px 2px 2px 0px rgb(0, 45, 65, 0.2);
     max-width: $wrap; 
     @include flex(space-between, center);
     margin: 0 auto;
@@ -17,6 +19,7 @@
     &.transparent {
         transition: 0.5s;
         background: transparent;
+        box-shadow: none;        
     }
     @media (min-width: $desktop-min) and (max-width: $desktop-max) {
 
