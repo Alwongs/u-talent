@@ -41,7 +41,11 @@
         background-position: center;
         width: 32px;
         height: 32px; 
-    }     
+        &:hover {
+            border-radius: 2px;
+            box-shadow: 1px 1px 10px 3px rgba(255, 255, 255, 0.4);
+        } 
+    }      
     &:active {
         box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.2);
     }  
@@ -101,6 +105,7 @@
 .nav-panel__item:last-child {
     @media (max-width: $mobile-max) {
         border-bottom: none;
+        margin-top: 32px;
     }    
 }
 
@@ -134,6 +139,10 @@
         height: 32px;
         background-image: url('../img/svg/menu_btn.svg');
         background-repeat: no-repeat;
+        &:hover {
+            border-radius: 2px;
+            box-shadow: 1px 1px 10px 3px rgba(255, 255, 255, 0.4);
+        } 
         &.active {
             background-image: url('../img/svg/menu_close_btn.svg');  
             background-repeat: no-repeat;              
