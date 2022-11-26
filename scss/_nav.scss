@@ -82,6 +82,7 @@
     }  
 }
 .nav-panel__item {
+    //border: 1px solid white;
     margin: 0 25px;
 
     @media (min-width: $desktop-min) and (max-width: $desktop-max) {
@@ -97,6 +98,12 @@
         border-bottom: 1px solid white;
     }    
 }
+.nav-panel__item:last-child {
+    @media (max-width: $mobile-max) {
+        border-bottom: none;
+    }    
+}
+
 .nav-panel__item a {
     color: $white;
     font-size: 18px;
