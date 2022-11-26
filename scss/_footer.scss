@@ -26,7 +26,6 @@
     }          
 }
 .app-footer__contacts {
-
     h4 {
         font-weight: normal;
         font-size: 12px;
@@ -40,11 +39,16 @@
     @media (max-width: $mobile-max) {
         margin-bottom: 32px;
     }  
-
 }
 
 
-
+.app-footer__devider {
+    @media (max-width: $mobile-max) {
+        width: 100%;
+        box-shadow: 0px 0px 1px 0.5px rgba(255, 255, 255, 0.2);
+        margin-bottom: 32px;
+    }    
+}
 
 .app-footer__dev-info {
     h4 {
