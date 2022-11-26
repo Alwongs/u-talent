@@ -5,24 +5,29 @@
     border-radius: 50%;
     box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1); 
 }
+.social-media li a {
+    display: block;
+    width: 32px;
+    height: 32px;
+    @media (max-width: $mobile-max) {
+        width: 48px;
+        height: 48px;
+    }    
+}
 .social-media li:not(:last-child) {
     margin-right: 8px;
+    @media (max-width: $mobile-max) {
+        margin-right: 24px;
+    } 
 }
+
+
 .social-media__whatsapp a {
-    display: block;
     background-image: url('../img/svg/whatsapp.svg');
-    width: 32px;
-    height: 32px;
 }
 .social-media__viber a {
-    display: block;
     background-image: url('../img/svg/viber.svg');
-    width: 32px;
-    height: 32px;
 }
 .social-media__telegram a {
-    display: block;
     background-image: url('../img/svg/telegram.svg');
-    width: 32px;
-    height: 32px;
 }
