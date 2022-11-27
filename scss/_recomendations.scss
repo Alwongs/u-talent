@@ -1,5 +1,4 @@
 .recomendations { 
-    //background-color: rgb(255, 228, 211);
     padding: 48px 32px 32px;
     @media (min-width: $tablet-min) and (max-width: $tablet-max) {
         padding: 48px 16px 16px;  
@@ -47,7 +46,6 @@
 	color: #ef8267;
 	text-align: right;
 }
-
 .recomendations__item {
     font-size: 16px;
     margin-bottom: 16px;
@@ -56,4 +54,3 @@
     justify-content: center;
     padding: 30px 0 24px;
 }
-

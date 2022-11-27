@@ -26,7 +26,7 @@
 	position: relative;	
     font-size: 16px;
     font-weight: 400;
-    border-bottom: 1px dotted lightgrey; 
+    border-bottom: 1px dotted #00b903; 
     padding: 6px 0;
     @media (min-width: $tablet-min) and (max-width: $tablet-max) {
         font-size: 16px;
@@ -43,13 +43,11 @@
 	top: 5px;
 	left: -26px;
 	width: 20px;    
-	color: #ef8267;
+	color: #00b903;
+    font-weight: 500;
 	text-align: right;
 }
-
 .participants__item {
     font-size: 16px;
     margin-bottom: 16px;
 }
-
-
