@@ -67,7 +67,7 @@
     @media (max-width: $mobile-max) {
         color: transparent;
         border: none;
-        border-radius: 0;
+        box-shadow: none;
         padding: 0;
     }        
 }
