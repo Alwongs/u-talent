@@ -58,3 +58,10 @@
         }
     }     
 }
+.app-footer__dev-email {
+    color: rgb(152, 200, 255); 
+    text-decoration: underline;
+    &:hover {
+        color: rgb(255, 179, 132);       
+    }
+}
