@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    color: white;
+    color: $white;
     height: 100%;
     font-size: 16px;
     font-weight: 300;
@@ -40,6 +40,7 @@
     }    
 }
 .app-footer__dev-info {
+    color: rgb(122, 133, 150);
     h4 {
         font-weight: normal;
         font-size: 12px;
@@ -59,7 +60,7 @@
     }     
 }
 .app-footer__dev-email {
-    color: rgb(152, 200, 255); 
+    color: rgb(142, 165, 192); 
     text-decoration: underline;
     &:hover {
         color: rgb(255, 179, 132);       

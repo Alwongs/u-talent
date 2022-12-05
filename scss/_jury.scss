@@ -43,7 +43,7 @@
 }
 .jury__image-block {
     @include flex(center, center);
-    margin: $mc;
+    margin: 0 auto;
     width: 60%;
     height: auto;
     overflow: hidden; 
