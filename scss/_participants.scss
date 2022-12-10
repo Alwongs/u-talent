@@ -13,7 +13,11 @@
 .participants__container {
     width: fit-content;
     margin: 0 auto;
-    list-style: none;   
+    list-style: none;  
+    @media (max-width: $mobile-max) {
+        width: 100%;
+        margin: 0;
+    } 
 }
 .participants__container ol {
 	list-style-type: none; 
@@ -73,5 +77,11 @@
     @media (max-width: $mobile-max) {
         font-size: 10px !important;
         padding: 4px 6px;        
+    }   
+}
+.participants-table__age {
+    font-size: 14px !important;
+    @media (max-width: $mobile-max) {
+        font-size: 10px !important;       
     }   
 }
