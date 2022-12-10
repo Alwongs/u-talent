@@ -65,23 +65,23 @@
     border: 1px solid rgba(49, 109, 134, 0.2); 
     border-bottom: 1px solid rgba(49, 109, 134, 0.9);  
     padding: 6px 16px;
-    font-size: 15px;
+    font-size: 14px;
     @media (max-width: $mobile-max) {
-        font-size: 11px;
-        padding: 4px 4px;        
+        font-size: 10px;
+        padding: 4px;        
     }      
 }
 .participants-table__number {
     color: green;
-    font-size: 14px !important;
+    font-size: 12px;
     @media (max-width: $mobile-max) {
-        font-size: 10px !important;
+        font-size: 9px !important;
         padding: 4px 6px;        
     }   
 }
 .participants-table__age {
-    font-size: 14px !important;
+
     @media (max-width: $mobile-max) {
-        font-size: 10px !important;       
+        font-size: 9px !important;
     }   
 }
