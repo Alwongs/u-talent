@@ -19,6 +19,21 @@
         margin: 0;
     } 
 }
+.participants__note {
+    margin-bottom: 16px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.participants__note-color  {
+    border: 1px solid rgb(49, 109, 134);
+    width: 100px;
+    height: 100%;
+}
+.participants__note-label  {
+    padding-left: 8px;
+}
 .participants__container ol {
 	list-style-type: none; 
 	counter-reset: num;
